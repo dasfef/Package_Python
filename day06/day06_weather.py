@@ -23,7 +23,7 @@ def main():
             # url = "https://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4311425300"         # 오창읍의 동네예보
             link = "http://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty?serviceKey="
             serviceKey = "74c5ZdkDfPARwepbwip9XOy3B2OYJkUBxj12RhzlgPLU34nfU9FiPmprQPybkilNGZS10zlDq1jRt9PG6HH0uQ%3D%3D"
-            afterLink = "&returnType=xml&numOfRows=10&pageNo=1&sidoName=%EC%B6%A9%EB%B6%81&ver=1.0"
+            afterLink = "&returnType=xml&numOfRows=100&pageNo=1&sidoName=%EC%B6%A9%EB%B6%81&ver=1.0"
             url = link + serviceKey + afterLink
             response = requests.get(url)
 
